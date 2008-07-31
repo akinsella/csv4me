@@ -1,4 +1,4 @@
-package org.helyx.app.j2me.lib.csv;
+package au.com.bytecode.opencsv;
 
 /**
  Copyright 2005 Bytecode Pty Ltd.

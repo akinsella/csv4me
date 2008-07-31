@@ -1,4 +1,4 @@
-package org.helyx.app.j2me.lib.csv;
+package au.com.bytecode.opencsv;
 
 /**
  Copyright 2005 Bytecode Pty Ltd.
@@ -16,10 +16,11 @@ package org.helyx.app.j2me.lib.csv;
  limitations under the License.
  */
 
-import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.Reader;
 import java.util.Vector;
+
+import org.helyx.basics4me.io.BufferedReader;
 
 /**
  * A very simple CSV reader released under a commercial-friendly license.
