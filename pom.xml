@@ -43,7 +43,7 @@
 	<distributionManagement>
 		<repository>
 			<id>Helyx.org FTP Repository</id>
-			<url>ftp://ftp.helyx.org/www/maven/repository/install</url>
+			<url>ftp://ftp.helyx.org/maven/repository/install</url>
 		</repository>
 	</distributionManagement>
 
