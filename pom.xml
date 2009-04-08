@@ -37,19 +37,27 @@
 		<connection>scm:svn:https://helyx.devguard.com/svn/csv4me/trunk</connection>
 		<developerConnection>scm:svn:https://helyx.devguard.com/svn/csv4me/trunk</developerConnection>
 		<tag>HEAD</tag>
-		<url>https://helyx.devguard.com/wsvn/listing.php?repname=csv4me&amp;path=%2Ftrunk%2F#_trunk_</url>
+		<url>https://helyx.devguard.com/wsvn/csv4me/trunk/</url>
 	</scm>
 
 	<distributionManagement>
 		<repository>
-			<id>Helyx.org FTP Repository</id>
-			<url>ftp://ftp.helyx.org/maven/repository/install</url>
+			<id>helyx.org-repo-release</id>
+			<url>ftp://ftp.helyx.org/maven/repository/release</url>
 		</repository>
+		<snapshotRepository>
+			<id>helyx.org-repo-snapshot</id>
+			<url>ftp://ftp.helyx.org/maven/repository/snapshot</url>
+		</snapshotRepository>
+		<site>
+			<id>helyx.org-site-csv4me</id>
+			<url>ftp://ftp.helyx.org/site/csv4me</url>
+		</site>
 	</distributionManagement>
 
 	<issueManagement>
-		<system>jtrac</system>
-		<url>http://r13491.ovh.net/jtrac/app/</url>
+		<system>mantis</system>
+		<url>http://issues.helyx.org</url>
 	</issueManagement>
 
 	<developers>
@@ -70,12 +78,25 @@
 
 	<repositories>
 		<repository>
+			<id>helyx.org-repo-manual</id>
+			<url>http://maven.helyx.org/repository/manual</url>
+		</repository>
+		<repository>
 			<id>helyx.org-repo-release</id>
 			<url>http://maven.helyx.org/repository/release</url>
 		</repository>
 	</repositories>
 
 	<build>
+	
+		<extensions>
+			<extension>
+				<groupId>org.apache.maven.wagon</groupId>
+				<artifactId>wagon-ftp</artifactId>
+				<version>1.0-alpha-6</version>
+			</extension>
+		</extensions>
+
 		<pluginManagement>
 			<plugins>
 				<plugin>
