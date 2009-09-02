@@ -1,0 +1,8 @@
+MIDlet-Version: 1.0.0
+MIDlet-Info-URL: http://csv4me.helyx.org
+MIDlet-Vendor: Helyx.org
+MIDlet-Jar-URL: Csv4me.jar
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-Description: Csv4ME
+MicroEdition-Profile: MIDP-2.0
+MIDlet-Name: Csv4ME
